@@ -110,7 +110,7 @@ function FileUploader() {
       {!uploadInProgress && (
         <div
           {...getRootProps()}
-          className={`p-10 border-2 border-dashed mt-10 w-[90%]  border-indigo-600 text-indigo-600 rounded-lg h-96 flex items-center justify-center ${
+          className={`p-10 border-2 border-dashed mt-10 w-[90%] cursor-pointer  border-indigo-600 text-indigo-600 rounded-lg h-96 flex items-center justify-center ${
             isFocused || isDragAccept ? "bg-indigo-300" : "bg-indigo-100"
           }`}
         >

@@ -13,14 +13,29 @@ import { PineconeConflictError } from "@pinecone-database/pinecone/dist/errors";
 import { Index, RecordMetadata } from "@pinecone-database/pinecone";
 import { adminDb } from "../firebaseAdmin";
 import { auth } from "@clerk/nextjs/server";
+import { GoogleGenerativeAIEmbeddings } from "@langchain/google-genai";
+import { TaskType } from "@google/generative-ai";
+import { ChatGoogleGenerativeAI } from "@langchain/google-genai";
+import { HarmBlockThreshold, HarmCategory } from "@google/generative-ai";
 
 // Initialize the OpenAI model with API key and model name
-const model = new ChatOpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-  modelName: "gpt-4o",
+// const model = new ChatOpenAI({
+//   apiKey: process.env.GEMINI_API_KEY,
+//   modelName: "gpt-4o",
+// });
+
+const model = new ChatGoogleGenerativeAI({
+  model: "gemini-pro",
+  maxOutputTokens: 2048,
+  safetySettings: [
+    {
+      category: HarmCategory.HARM_CATEGORY_HARASSMENT,
+      threshold: HarmBlockThreshold.BLOCK_LOW_AND_ABOVE,
+    },
+  ],
 });
 
-export const indexName = "papafam";
+export const indexName = "chat-pdf";
 
 async function fetchMessagesFromDB(docId: string) {
   const { userId } = await auth();
@@ -118,7 +133,13 @@ export async function generateEmbeddingsInPineconeVectorStore(docId: string) {
 
   // Generate embeddings (numerical representations) for the split documents
   console.log("--- Generating embeddings... ---");
-  const embeddings = new OpenAIEmbeddings();
+  // const embeddings = new OpenAIEmbeddings();
+
+  const embeddings = new GoogleGenerativeAIEmbeddings({
+    model: "text-embedding-004", // 768 dimensions
+    taskType: TaskType.RETRIEVAL_DOCUMENT,
+    title: "Document title",
+  });
 
   const index = await pineconeClient.index(indexName);
   const namespaceAlreadyExists = await namespaceExists(index, docId);
