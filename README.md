@@ -1,115 +1,156 @@
-# AI SaaS Challenge Event - 5 Day Challenge
-
-Welcome to the AI SaaS Challenge! All the details you need to get started and participate in the challenge are below. Let's get ready to elevate our skills and build something amazing together!
-
-## Getting Started
-
-1️⃣ **Sign Up**: If you haven't already, sign up for the AI SaaS Challenge here: [AI SaaS Challenge Sign Up](https://www.papareact.com/challenge)
-
-2️⃣ **Clerk Account Setup**: Set up your Clerk account using our special link: [Clerk Setup](https://go.clerk.com/sonny). If you already have a Clerk account, please still click through our link and access the dashboard to complete this step.
-
-3️⃣ **Grand Finale Sign Up**: Secure your spot for the grand finale event here: [Grand Finale Sign Up](https://crowdcast.io/c/sonny)
-
-4️⃣ **Challenge Details**: Find the complete blueprint, schedule, prizes, points system, and other information about the AI SaaS Challenge here: [Challenge Details](https://www.skool.com/universityofcode/classroom/63e22c85?md=dea741f6f4d84718a17b2fa16c5da407)
-
-## Schedule: July 23rd (Tuesday) - July 27th (Saturday)
-
-### Daily Agenda
-
-**Day 1️⃣ | July 23rd**: [Watch Live](https://youtube.com/live/z0ZE6lnhdns)
-- Introduction to the Challenge
-- Setting up your Clerk account
-- Free Digital Portfolio / Resume Starter Pack v4.
-- 📝 [Day 1 Homework Submission](https://www.papareact.com/saas-challenge-day-1-homework)
-
-**Day 2️⃣ | July 24th**: [Watch Live](https://www.papareact.com/viewing-room-saas-day-2)
-- Building a Beautiful Landing Page
-- Implementing Clerk Authentication & Middleware
-- Building a Functional Dashboard using Shadcn & the Header
-- Implementing Upload Functionality with React-Dropzone
-- Deploying the Build to Vercel
-- Featuring the Best Portfolio Submissions from Day 1
-- 📝 [Day 2 Homework Submission](https://www.papareact.com/saas-challenge-day-2-homework)
-
-**Day 3️⃣ | July 25th**: [Watch Live](https://www.papareact.com/viewing-room-saas-day-3)
-- Setting Up Firebase Storage & Firestore
-- Implementing PDF Rendering to View PDFs
-- Implementing Chat Functionality with Pinecone, Langchain & OpenAI Integration
-- Implementing My Documents Functionality on the Dashboard
-- Deploying the Build to Vercel
-- Featuring the Best App Deployments from Day 2
-- 📝 [Day 3 Homework Submission](https://www.papareact.com/saas-challenge-day-3-homework)
-
-**Day 4️⃣ | July 26th**: [Watch Live](https://www.papareact.com/viewing-room-saas-day-4)
-- Implementing Stripe Checkout for Payments
-- Building a Custom Webhook to Integrate with Stripe Webhooks
-- Building a Beautiful Pricing Page
-- Limiting Functionality for Free / Pro Plans
-- Implementing Delete Document Functionality
-- Implementing Download Document Functionality
-- Deploying the Build to Vercel
-- Featuring the Best App Deployments from Day 3
-- 📝 [Day 4 Homework Submission](https://www.papareact.com/saas-challenge-day-4-homework)
-
-**Day 5️⃣ | July 27th**: The Grand Finale
-- Secure your seat here 👉 [Grand Finale Sign Up](https://crowdcast.io/c/sonny)
-
-## What You'll Learn
-
-- How to leverage AI to stay ahead
-- How to launch your own SaaS and start generating revenue
-- How to elevate your skills & land your dream job as a full stack developer
-- The tech stack to focus on in 2024 and beyond
-- Technical skills to level up
-- My secrets to landing my dream job
-
-## Rewards for Participation
-
-🎁 Show up & stick till the end to receive:
-- Complete AI SaaS App Code
-- Free Giveaways
-- Winner Reveal (Maybe it's you!)
-- Tons of surprises and a BIG surprise reveal!
-
-## The Point System
-
-Earn points for various activities to win amazing prizes!
-
-1️⃣ Point: Like, Subscribe, and Comment on every YouTube Live Video
-2️⃣ Points: Tag @ssssangha on Instagram Story using #PAPAChallenge
-3️⃣ Points: Help someone who's stuck or with homework (Add screenshot proof in the AI SaaS Challenge Channel)
-4️⃣ Points: Referral Bonus when someone joins the challenge through your recommendation (Add screenshot proof in the AI SaaS Challenge Channel)
-5️⃣ Points: Submit homework each day (20 points in total if you have submitted homework daily!)
-
-### Extra Bonus Points
-
-🔟 Points: Implement Clerk correctly using our special link: [Clerk Setup](https://go.clerk.com/sonny)
-🔟 Points: Implement Clerk Elements successfully
-🔟 Points: If your build gets featured on any Day!
-
-## Prizes
-
-### 🥇 First Place Winner
-- LG 34'' Ultra Wide Monitor
-- Lifetime Mentorship Package worth £1000's
-- Clerk Goodies (Backpacks, Stickers, T-shirts, & more!)
-
-### 🥈 Second Place Winner
-- Keychron K2 Keyboard
-- Our Popular PAPA Platinum Package worth £600 GBP
-- Clerk Goodies (Backpacks, Stickers, T-shirts, & more!)
-
-### 🥉 Third Place Winner
-- Cotopaxi Clerk Backpack
-- PAPA GitHub Repo that contains over 50+ Full Stack App Source Codes!
-- Clerk Goodies (Backpacks, Stickers, T-shirts, & more!)
+Here’s a sample `README.md` file for your "Chat with PDF AI" SaaS application, built using **Next.js**, **TailwindCSS**, **ShadCN UI**, **Clerk authentication**, and **Firebase**:
 
 ---
 
-Don't worry if you don't win; just show up on ALL 5 days of the challenge to receive free goodies mentioned above. This challenge is all about learning, having fun, and expanding your skills in SaaS and AI... all for FREE! 😃
+# 📄 Chat with PDF AI
 
-Get ready to conquer the AI SaaS Challenge together. Comment below if you have any questions and we will help you out! 👇
+**Chat with PDF AI** is a SaaS web application that allows users to upload PDF documents and interact with them using AI-driven conversations. Powered by Next.js, TailwindCSS, ShadCN UI, Clerk authentication, and Firebase, this application leverages machine learning models to generate insightful responses based on PDF content.
 
-I'll see you on Day 1 of the AI SaaS Challenge tomorrow. Peace PAPAFAM! ✌️
+## 🚀 Features
 
-[Watch Live](https://youtube.com/live/z0ZE6lnhdns)
+- **Upload & Interact with PDFs**: Users can upload PDFs and ask questions or engage in conversations with the document.
+- **AI-Powered Chat**: The app uses AI models to generate answers and insights based on the PDF content.
+- **Clerk Authentication**: Secure user authentication and session management powered by Clerk.
+- **Firebase Backend**: Store uploaded files and user data securely using Firebase.
+- **Responsive UI**: Built with TailwindCSS and ShadCN UI for a sleek and responsive design.
+- **Role-based Access Control**: Manage different user permissions using Clerk's powerful authentication platform.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Styling**: [TailwindCSS](https://tailwindcss.com/) & [ShadCN UI](https://ui.shadcn.dev/)
+- **Authentication**: [Clerk](https://clerk.dev/)
+- **Backend**: [Firebase](https://firebase.google.com/)
+- **Deployment**: [Vercel](https://vercel.com/)
+
+---
+
+## ⚙️ Installation and Setup
+
+### Prerequisites
+
+Before you begin, ensure you have the following installed on your system:
+
+- [Node.js](https://nodejs.org/en/) (v16 or higher)
+- [Firebase CLI](https://firebase.google.com/docs/cli)
+- [Clerk account](https://clerk.dev/)
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/chat-pdf.git
+cd chat-pdf
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Set up environment variables
+
+Create a `.env.local` file in the root directory and add the following environment variables:
+
+```bash
+NEXT_PUBLIC_CLERK_FRONTEND_API=<Your Clerk Frontend API Key>
+NEXT_PUBLIC_CLERK_API_KEY=<Your Clerk API Key>
+NEXT_PUBLIC_FIREBASE_API_KEY=<Your Firebase API Key>
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=<Your Firebase Auth Domain>
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=<Your Firebase Project ID>
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=<Your Firebase Storage Bucket>
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=<Your Firebase Messaging Sender ID>
+NEXT_PUBLIC_FIREBASE_APP_ID=<Your Firebase App ID>
+NEXT_PUBLIC_GEMINI_API_KEY=<Your Gemini AI API Key>
+```
+
+### 4. Firebase setup
+
+Initialize Firebase by setting up Firebase in your project:
+
+```bash
+firebase init
+```
+
+Make sure to enable Firestore and Firebase Storage in your Firebase Console.
+
+### 5. Run the application
+
+Start the Next.js development server:
+
+```bash
+npm run dev
+```
+
+The app will be available at [http://localhost:3000](http://localhost:3000).
+
+---
+
+## ✨ UI Components and Styling
+
+This application uses **TailwindCSS** for utility-first styling and **ShadCN UI** for building reusable components.
+
+### TailwindCSS
+
+TailwindCSS is already set up in the project. If you wish to customize your theme or add plugins, edit the `tailwind.config.js` file.
+
+### ShadCN UI
+
+ShadCN UI components are imported as needed. To add more ShadCN components, follow their documentation [here](https://ui.shadcn.dev/).
+
+---
+
+## 🔐 Authentication
+
+Clerk is used for user authentication and session management. It handles:
+
+- Sign-up, login, and logout flows
+- Role-based access control
+- Secure user management
+
+### Clerk Setup
+
+Ensure you have configured Clerk correctly in your `.env.local` file with your API keys. More details on how to use Clerk can be found in their [official documentation](https://clerk.dev/docs).
+
+---
+
+## 🔥 Firebase Integration
+
+Firebase is used to store user data and uploaded PDF files. Make sure you have set up Firebase correctly by linking your Firebase project in the `.env.local` file.
+
+- **Firestore**: Stores user chat histories and file metadata.
+- **Firebase Storage**: Stores uploaded PDF files securely.
+
+---
+
+## 📝 Usage
+
+### 1. Sign Up / Log In
+Users can sign up or log in using the authentication provided by Clerk.
+
+### 2. Upload PDF
+Once logged in, users can upload PDF documents via the upload interface.
+
+### 3. Interact with PDF
+After the upload, users can ask questions or chat with the PDF, with AI providing responses based on the document content.
+
+
+## 🚀 Deployment
+
+To deploy this app to production on Vercel:
+
+1. Push your changes to GitHub.
+2. Connect your repository to [Vercel](https://vercel.com/).
+3. Set environment variables in the Vercel dashboard.
+4. Click **Deploy**.
+
+---
+
+## 🛠 Future Improvements
+
+- Add multi-language support for better accessibility.
+- Implement more advanced document parsing features.
+- Add support for multiple file formats (e.g., DOCX, XLSX).
+
