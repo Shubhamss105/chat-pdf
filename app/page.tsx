@@ -52,7 +52,7 @@ const features = [
 
 export default function Home() {
   return (
-    <main className="flex-1 overflow-scroll p-2 lg:p-5 bg-gradient-to-bl from-white to-indigo-600">
+    <main className="flex-1 overflow-scroll">
       <div className="bg-white py-24 sm:py-32 rounded-md drop-shadow-xl">
         <div className="flex flex-col justify-center items-center mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl sm:text-center">
