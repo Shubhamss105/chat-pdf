@@ -4,7 +4,7 @@ import useSubscription from "@/hooks/useSubscription";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { Loader2Icon, StarIcon } from "lucide-react";
-import { createStripePortal } from "@/actions/createStripePortal";
+// import { createStripePortal } from "@/actions/createStripePortal";
 import { useRouter } from "next/navigation";
 import { useTransition } from "react";
 
@@ -13,12 +13,12 @@ function UpgradeButton() {
   const [isPending, startTransition] = useTransition();
   const router = useRouter();
 
-  const handleAccount = () => {
-    startTransition(async () => {
-      const stripePortalUrl = await createStripePortal();
-      router.push(stripePortalUrl);
-    });
-  };
+  // const handleAccount = () => {
+  //   startTransition(async () => {
+  //     const stripePortalUrl = await createStripePortal();
+  //     router.push(stripePortalUrl);
+  //   });
+  // };
 
   if (!hasActiveMembership && !loading)
     return (
@@ -38,8 +38,9 @@ function UpgradeButton() {
 
   return (
     <Button
-      onClick={handleAccount}
-      disabled={isPending}
+      // onClick={handleAccount}
+      // disabled={isPending}
+      disabled
       variant="default"
       className="border-indigo-600 bg-indigo-600"
     >
